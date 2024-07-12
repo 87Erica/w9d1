@@ -1,0 +1,44 @@
+Linear search involves traversing the array from the beginning to the end and comparing each element with the 
+target value. If the target value is found, its index is returned. If the end of the array is reached without 
+finding the target value, -1 is returned.
+
+Time Complexity:
+The time complexity of the linear search algorithm is O(n), where n is the number of elements in the array. 
+In the worst case, the algorithm has to check all n elements to determine whether the target value is present.
+
+Since linear search is inherently O(n) in time complexity, there's no straightforward way to improve its 
+efficiency in the general case for an unsorted array. However, if the array is sorted, we can use more 
+efficient search algorithms like binary search.
+
+Algorithm 2: Bubble Sort
+Description:
+Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the 
+wrong order. The process is repeated until the list is sorted.
+
+Time Complexity:
+The time complexity of the bubble sort algorithm is O(n^2), where n is the number of elements in the array. 
+This is because, in the worst case, it requires n-1 passes through the list and each pass involves up to n-1 
+comparisons.
+
+Documentation and Analysis
+Linear Search:
+Time Complexity: O(n)
+Space Complexity: O(1)
+Optimizations: No significant optimization for unsorted arrays. If sorted, use binary search (O(log n)).
+
+
+Bubble Sort:
+Time Complexity: O(n^2) (worst and average case), O(n) (best case with optimized version)
+Space Complexity: O(1)
+Optimizations: Early termination if no swaps are made in a pass.
+
+Comparison and Trade-offs:
+Linear Search: Simple to implement but inefficient for large unsorted arrays. Efficient with sorted data using binary search.
+Bubble Sort: Simple but inefficient for large arrays. Optimized version reduces unnecessary passes but remains less efficient than more advanced sorting algorithms like quicksort or mergesort.
+These algorithms are foundational and provide a basis for understanding more complex algorithms, emphasizing the importance of choosing the right algorithm for a given problem based on its complexity characteristics.
+
+
+
+
+
+
